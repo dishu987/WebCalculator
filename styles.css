@@ -1,0 +1,122 @@
+#mydiv {
+    position: absolute;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    background-color: #fff !important;
+    overflow: auto;
+    resize: horizontal;
+    padding: 15px;
+    height: fit-content;
+    width: 400px;
+    box-shadow: 5px 5px 10px 0px rgb(177, 177, 177);
+    border-radius: 1.2ex;
+}
+
+.disp {
+    display: flex;
+    margin: 0px;
+    margin-top: 5px;
+    height: 110px;
+    background-color: rgba(0, 145, 36, 0.664);
+    border-radius: 0.7ex;
+    box-shadow: inset 0 1px 7px rgba(0, 70, 23, 0.904);
+    flex-flow: column-reverse;
+    text-align: end;
+    color: rgb(0, 0, 0);
+    font-family: "Courier New", Courier, monospace;
+    font-size: xx-large;
+    font-weight: bold;
+    outline: 1px solid black;
+}
+
+.disp::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "Courier New", Courier, monospace;
+    font-size: xx-large;
+    opacity: 0.5;
+}
+
+#mydivheader {
+    padding: 20px;
+    cursor: move;
+    z-index: 10;
+    background-color: #333333e7;
+    color: #fff;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-bottom: 0 !important;
+    transition: all 0.5s ease;
+    border-radius: 0.7ex;
+}
+
+#mydivheader:hover {
+    background-color: #1d1c1ce7;
+}
+
+.col-sm-12 {
+    padding: 0 !important;
+    flex-grow: 1 !important;
+}
+
+.col-sm-6 {
+    padding: 0 !important;
+    flex-grow: 1 !important;
+}
+
+.btn-default {
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 20px !important;
+    outline: none !important;
+    height: 70px;
+    width: 95%;
+    transition: all 0.4s ease;
+    box-shadow: inset 0px 0px 5px 2px rgb(45, 0, 11);
+    background: rgba(66, 66, 66, 0.829) !important;
+    color: rgba(255, 255, 255, 0.781) !important;
+    border-radius: 1.5ex !important;
+}
+
+.btn:hover {
+    color: rgba(0, 0, 0, 0.603) !important;
+    box-shadow: 0px 0px 5px 2px rgba(99, 99, 99, 0.63);
+    border-radius: 1.6ex;
+    animation-name: scale-up-center;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.Ac:hover {
+    background-color: rgba(252, 0, 0, 0.692) !important;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 255, 21, 0.692) !important;
+}
+
+.num:hover {
+    background-color: rgba(0, 169, 247, 0.356) !important;
+}
+
+.oper:hover {
+    background-color: rgba(231, 247, 0, 0.356) !important;
+}
+
+.cal:hover {
+    background-color: rgba(247, 0, 235, 0.356) !important;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
